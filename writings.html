@@ -1,96 +1,60 @@
-<!-- index.html -->
+<!-- =======================  writings.html  ======================= -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Conway Yang | Philosophy</title>
+    <title>Weiyang Kang | Writings</title>
     <style>
-      /* -------- tiny, readable stylesheet -------- */
-      :root {
-        --fg: #222;
-        --accent: #0055aa;
-        --bg: #fafafa;
-      }
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      body {
-        font-family: Georgia, "Times New Roman", serif;
-        line-height: 1.6;
-        color: var(--fg);
-        background: var(--bg);
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.5rem 1rem;
-        max-width: 60rem;
-        margin: 0 auto;
-      }
-      header h1 a {
-        color: var(--fg);
-        text-decoration: none;
-      }
-      nav a {
-        margin-left: 1.25rem;
-        color: var(--accent);
-        text-decoration: none;
-      }
-      nav a:hover { text-decoration: underline; }
-      main {
-        flex: 1;
-        max-width: 45rem;
-        margin: 0 auto;
-        padding: 2rem 1rem;
-      }
-      h2 { font-size: 1.6rem; margin-bottom: 1rem; }
-      footer {
-        text-align: center;
-        font-size: 0.85rem;
-        padding: 2rem 0 1rem;
-        color: #666;
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+      :root { --fg:#222; --accent:#0055aa; --bg:#fafafa; }
+      *{box-sizing:border-box;margin:0;padding:0}
+      body{font-family:'Merriweather',serif;line-height:1.7;color:var(--fg);background:var(--bg);display:flex;flex-direction:column;min-height:100vh}
+      header{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 1rem;max-width:60rem;margin:0 auto}
+      header h1 a{color:var(--fg);text-decoration:none}
+      nav a{margin-left:1.25rem;color:var(--accent);text-decoration:none}
+      nav a:hover{text-decoration:underline}
+      main{flex:1;max-width:45rem;margin:0 auto;padding:2rem 1rem}
+      h2{font-size:1.6rem;margin:1.5rem 0 1rem}
+      ul{padding-left:1.25rem;margin-bottom:1.5rem}
+      li{margin-bottom:.75rem}
+      footer{text-align:center;font-size:.85rem;padding:2rem 0 1rem;color:#666}
     </style>
   </head>
   <body>
     <header>
-      <h1><a href="index.html">Conway Yang</a></h1>
+      <h1><a href="index.html">Weiyang Kang</a></h1>
       <nav>
         <a href="writings.html">Writings</a>
+        <a href="research.html">Research</a>
         <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
       </nav>
     </header>
 
     <main>
-      <h2>Hello, I’m Conway.</h2>
-      <p>
-        I’m a philosophy PhD candidate at KU Leuven exploring Kant, phenomenology and
-        theories of subjectivity. I also translate books and run grassroots
-        projects to make education fairer in rural China.
-      </p>
+      <h2>Books & Translations</h2>
+      <ul>
+        <li>
+          <strong>Dan Zahavi, <em>Phenomenology: The Basics</em></strong> — Chinese
+          translation (《现象学入门》), forthcoming with Peking University Press, 2025.
+        </li>
+      </ul>
+
+      <h2>Selected Essays (English)</h2>
+      <ul>
+        <li><a href="#">“Kant’s Pragmatic Turn: Freedom After the <em>Critique</em>.”</a> (under review)</li>
+        <li><a href="#">“Embodiment and the First‑Person Perspective.”</a> (KU Leuven Phenomenology Colloquium, 2024)</li>
+      </ul>
+
+      <h2>Selected Essays (Chinese)</h2>
+      <ul>
+        <li>《试论“求知欲”在西方哲学传统中的地位》, 《北大哲学》2020年第2期</li>
+        <li>《康德<判断力批判>中的审美共同体》, 2023 9 月研讨会论文</li>
+      </ul>
     </main>
 
     <footer>
-      © <script>document.write(new Date().getFullYear());</script> Conway Yang
+      © <script>document.write(new Date().getFullYear());</script> Weiyang Kang
     </footer>
   </body>
 </html>
-
-<!--
-📁 Create three more files next to this one (copy–paste & tweak):
-  • writings.html   – list essays with <li><a href="docs/your‑essay.pdf">...</a>
-  • projects.html   – short blurbs of translations & NGO work
-  • about.html      – paste the full bio already drafted
-All share the same <header>/<footer>; just change the <main> content.
-
-🚀 Deployment (no build step):
-1. git init && git add . && git commit -m "static site"
-2. git remote add origin https://github.com/tgcatgc/kk-site.git
-3. git push -u origin main
-4. GitHub ➜ Settings ➜ Pages ➜ Branch: main / (root)
-After ~1 min your site is live at https://tgcatgc.github.io/kk-site/
--->
